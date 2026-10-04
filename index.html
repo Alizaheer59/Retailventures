@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Ventures | Strategy, Marketing & Execution</title>
+    <meta name="description" content="Accelerating Retail Growth Through Strategy, Marketing & Execution">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS (CDN version for standalone HTML) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            hover: '#A38244'
+                        },
+                        charcoal: {
+                            DEFAULT: '#1F2224',
+                            light: '#2A2E30'
+                        },
+                        beige: {
+                            DEFAULT: '#F9F8F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scroll Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal font-sans antialiased overflow-x-hidden">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 max-w-7xl h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-serif font-medium text-charcoal tracking-wide">
+                Retail <span class="text-gold italic">Ventures</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-700 tracking-wide">
+                <a href="#about" class="hover:text-gold transition-colors">About</a>
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#methodology" class="hover:text-gold transition-colors">Methodology</a>
+                <a href="#founder" class="hover:text-gold transition-colors">Founder</a>
+                <a href="#contact" class="bg-charcoal text-white px-5 py-2.5 hover:bg-gold transition-colors">Contact Us</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-charcoal p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[100vh] flex items-center bg-charcoal text-white pt-20">
+        <div class="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=3000&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-transparent"></div>
+
+        <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="max-w-2xl fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-tight mb-6">
+                    Accelerating Retail Growth Through <span class="text-gold italic">Strategy, Marketing & Execution</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 font-light leading-relaxed">
+                    Helping retail brands build stronger market positions, improve customer engagement, optimize performance, and expand with confidence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-gold hover:bg-gold-hover text-white px-8 py-4 flex items-center justify-center gap-2 transition-all duration-300 font-medium tracking-wide">
+                        Book Strategy Consultation <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                    <a href="#services" class="border border-white/30 hover:border-white hover:bg-white hover:text-charcoal text-white px-8 py-4 transition-all duration-300 font-medium tracking-wide text-center flex items-center justify-center">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left">
+                    <h2 class="text-3xl md:text-4xl font-serif font-light mb-6">
+                        Retail Strategy Meets <br/>
+                        <span class="text-gold italic">Real-World Execution</span>
+                    </h2>
+                    <div class="w-16 h-1 bg-gold mb-8"></div>
+                    <p class="text-gray-600 mb-6 leading-relaxed font-light text-lg">
+                        Retail Ventures is a retail-focused advisory and consulting firm helping businesses improve profitability, customer engagement, operational efficiency, and long-term growth.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed font-light text-lg">
+                        Our advisory approach combines market intelligence, retail expertise, customer insights, and practical implementation frameworks to deliver measurable business outcomes.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6 fade-in-right">
+                    <div class="bg-beige p-8 border-l-2 border-gold">
+                        <h3 class="text-xl font-medium mb-3">Vision</h3>
+                        <p class="text-gray-600 font-light text-sm">To be the trusted growth partner for retail brands defining the future of commerce.</p>
+                    </div>
+                    <div class="bg-beige p-8 border-l-2 border-gold mt-8">
+                        <h3 class="text-xl font-medium mb-3">Mission</h3>
+                        <p class="text-gray-600 font-light text-sm">Empowering retail businesses with actionable strategies and operational excellence.</p>
+                    </div>
+                    <div class="bg-beige p-8 border-l-2 border-gold">
+                        <h3 class="text-xl font-medium mb-3">Core Values</h3>
+                        <p class="text-gray-600 font-light text-sm">Integrity, Insight-driven, Execution Excellence, and Long-term Partnership.</p>
+                    </div>
+                    <div class="bg-beige p-8 border-l-2 border-gold mt-8">
+                        <h3 class="text-xl font-medium mb-3">Approach</h3>
+                        <p class="text-gray-600 font-light text-sm">Combining analytical rigor with hands-on retail implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="py-24 bg-beige">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="bg-white p-8 md:p-16 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-12 items-center fade-in-up">
+                <div class="md:w-1/3">
+                    <div class="w-full aspect-[3/4] bg-gray-200 relative overflow-hidden group">
+                        <img 
+                            src="founder.jpg" 
+                            alt="Abdul M. Raqshan" 
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                        <div class="absolute inset-0 bg-charcoal/10 transition-opacity duration-500 group-hover:opacity-0"></div>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-serif mb-2">Meet Abdul M. Raqshan</h2>
+                    <p class="text-gold font-medium tracking-wide text-sm uppercase mb-6">Founder & Principal Consultant</p>
+                    
+                    <p class="text-gray-600 font-light text-lg mb-6 leading-relaxed">
+                        Abdul M. Raqshan is a Business Strategist and Sales & Marketing Professional with extensive experience helping retail brands improve performance, strengthen market positioning, and scale successfully.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm font-light text-gray-700 mb-10">
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Retail Strategy</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Brand Development</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Marketing Transformation</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Customer Engagement</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Business Growth Planning</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Retail Operations</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Franchise Development</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Performance Analytics</div>
+                    </div>
+                    
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-charcoal hover:text-gold transition-colors font-medium">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-light mb-6">Our Advisory Services</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-gray-600 font-light text-lg">
+                    Comprehensive consulting solutions designed to unlock growth, optimize performance, and build market leadership across the retail value chain.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Brand Strategy & Positioning</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Brand Identity Development</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Market Positioning</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Competitive Analysis</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Customer Personas</li>
+                    </ul>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up" style="transition-delay: 100ms;">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Retail Marketing Strategy</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Go-To-Market Planning</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Omni-Channel Marketing</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Launch Strategies</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Regional Marketing</li>
+                    </ul>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up" style="transition-delay: 200ms;">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Store Branding & Visual Merchandising</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Store Experience Design</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Customer Journey Mapping</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> POS Branding</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Retail Environment Strategy</li>
+                    </ul>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Customer Acquisition & Engagement</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Loyalty Programs</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Footfall Generation</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Community Marketing</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Customer Retention</li>
+                    </ul>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up" style="transition-delay: 100ms;">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Digital & Social Media Marketing</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Performance Marketing</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Content Strategy</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Social Media Management</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Online Reputation Management</li>
+                    </ul>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300 group bg-gray-50/50 fade-in-up" style="transition-delay: 200ms;">
+                    <h3 class="text-xl font-medium mb-6 group-hover:text-gold transition-colors">Expansion & Growth Strategy</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Market Entry Strategy</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Franchise Development</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Channel Expansion</li>
+                        <li class="flex items-start text-sm text-gray-600 font-light"><span class="text-gold mr-2 mt-1">•</span> Growth Roadmaps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-24 bg-charcoal text-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="mb-16 md:flex justify-between items-end fade-in-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-serif font-light mb-6">Advisory Methodology</h2>
+                    <div class="w-16 h-1 bg-gold mb-6"></div>
+                    <p class="text-gray-400 font-light text-lg">
+                        A structured, end-to-end framework transforming strategic vision into measurable market success.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-px bg-white/10 -translate-y-1/2 z-0"></div>
+                <div class="grid md:grid-cols-5 gap-8 relative z-10">
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8 hover:border-gold transition-colors fade-in-up">
+                        <div class="text-gold font-serif text-3xl opacity-50 mb-4">01</div>
+                        <h3 class="text-xl font-medium mb-4">Discover</h3>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Market Research</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Customer Insights</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Business Diagnostics</li>
+                        </ul>
+                    </div>
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8 hover:border-gold transition-colors fade-in-up" style="transition-delay: 100ms;">
+                        <div class="text-gold font-serif text-3xl opacity-50 mb-4">02</div>
+                        <h3 class="text-xl font-medium mb-4">Strategize</h3>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Growth Planning</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Positioning</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Market Opportunity</li>
+                        </ul>
+                    </div>
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8 hover:border-gold transition-colors fade-in-up" style="transition-delay: 200ms;">
+                        <div class="text-gold font-serif text-3xl opacity-50 mb-4">03</div>
+                        <h3 class="text-xl font-medium mb-4">Build</h3>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Execution Roadmaps</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Operational Frameworks</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Capability Development</li>
+                        </ul>
+                    </div>
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8 hover:border-gold transition-colors fade-in-up" style="transition-delay: 300ms;">
+                        <div class="text-gold font-serif text-3xl opacity-50 mb-4">04</div>
+                        <h3 class="text-xl font-medium mb-4">Execute</h3>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Implementation Support</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Campaign Deployment</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Performance Tracking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-charcoal border border-white/10 p-6 md:p-8 hover:border-gold transition-colors fade-in-up" style="transition-delay: 400ms;">
+                        <div class="text-gold font-serif text-3xl opacity-50 mb-4">05</div>
+                        <h3 class="text-xl font-medium mb-4">Optimize</h3>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Analytics & ROI</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Reporting</li>
+                            <li class="text-sm text-gray-400 font-light border-l border-white/20 pl-3 py-1">Continuous Improvement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries & Why Us Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <!-- Industries Served -->
+                <div class="fade-in-left">
+                    <h2 class="text-3xl font-serif font-light mb-6">Industries We Serve</h2>
+                    <div class="w-16 h-1 bg-gold mb-10"></div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Retail</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">FMCG</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Fashion</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Lifestyle Brands</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Food & Beverage</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Consumer Products</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Franchise Businesses</div>
+                        <div class="px-5 py-3 border border-gray-200 text-sm font-medium hover:border-gold hover:text-gold transition-colors cursor-default">Specialty Retail</div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="bg-beige p-10 md:p-12 border-t-4 border-gold fade-in-right">
+                    <h2 class="text-3xl font-serif font-light mb-6">Why Choose Retail Ventures</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 border-b border-gray-200/50 pb-4">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span class="font-medium text-gray-800">Deep Retail Expertise</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-gray-200/50 pb-4">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span class="font-medium text-gray-800">Data-Driven Decision Making</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-gray-200/50 pb-4">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span class="font-medium text-gray-800">Strategic + Execution Focus</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-gray-200/50 pb-4">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span class="font-medium text-gray-800">Customized Growth Frameworks</span>
+                        </div>
+                        <div class="flex items-center gap-4 border-b border-gray-200/50 pb-4">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span class="font-medium text-gray-800">Long-Term Partnership Approach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-charcoal text-white pt-24 pb-12 border-t border-white/10">
+        <div class="container mx-auto px-6 max-w-7xl">
+            
+            <!-- CTA Banner -->
+            <div class="bg-gold p-10 md:p-16 text-center text-charcoal mb-24 relative overflow-hidden fade-in-up">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+                
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-5xl font-serif font-light mb-6">Ready to Build a Stronger Retail Brand?</h2>
+                    <p class="text-lg md:text-xl font-light mb-10 opacity-90">
+                        Schedule a strategic consultation and discover actionable growth opportunities for your business.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-charcoal text-white hover:bg-black px-8 py-4 transition-all duration-300 font-medium tracking-wide">
+                            Schedule Consultation
+                        </button>
+                        <a href="mailto:info@retailventures.in" class="bg-transparent border border-charcoal hover:bg-charcoal/10 text-charcoal px-8 py-4 transition-all duration-300 font-medium tracking-wide flex items-center justify-center">
+                            info@retailventures.in
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer info -->
+            <div class="grid md:grid-cols-3 gap-12 mb-16 border-b border-white/10 pb-16 fade-in-up">
+                <div>
+                    <h3 class="text-2xl font-serif mb-6"><span class="text-gold">Retail</span> Ventures</h3>
+                    <p class="text-gray-400 font-light text-sm mb-6 max-w-xs leading-relaxed">
+                        Accelerating growth through strategic planning, retail marketing, sales transformation, and operational excellence.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-6 uppercase tracking-wider text-sm">Contact Info</h4>
+                    <div class="space-y-4 font-light text-gray-300">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                            <span>Madhurawada, Visakhapatnam,<br/>Andhra Pradesh, India</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span>+91 92463 08601</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-gold shrink-0"></i>
+                            <span>info@retailventures.in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-medium mb-6 uppercase tracking-wider text-sm">Connect</h4>
+                    <p class="text-gray-400 font-light text-sm mb-4">
+                        Follow Abdul M. Raqshan and Retail Ventures for insights on retail growth strategy.
+                    </p>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:text-gold transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light fade-in-up">
+                <p>&copy; 2024 Retail Ventures. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Initialize Lucide Icons & Intersection Observer for Animations -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Simple scroll animation observer
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: stop observing once animated
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            const elementsToAnimate = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
+            elementsToAnimate.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
