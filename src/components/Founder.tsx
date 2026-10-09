@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export function Founder() {
   return (
@@ -44,7 +44,7 @@ export function Founder() {
             </div>
             
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-charcoal hover:text-gold transition-colors font-medium">
-              <Linkedin className="w-5 h-5" /> Connect on LinkedIn
+              Connect on LinkedIn <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
         </motion.div>

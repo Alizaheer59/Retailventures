@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
 
 export function Contact() {
   return (
@@ -67,7 +67,7 @@ export function Contact() {
               Follow Abdul M. Raqshan and Retail Ventures for insights on retail growth strategy.
             </p>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white hover:text-gold transition-colors">
-              <Linkedin className="w-5 h-5" /> LinkedIn Profile
+              LinkedIn Profile <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
         </div>
