@@ -9,7 +9,7 @@
   --beige: #F9F8F6;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-gold: var(--gold);
