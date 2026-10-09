@@ -7,8 +7,8 @@ export function Header() {
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
         <div className="container mx-auto px-6 max-w-7xl h-20 flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="text-2xl font-serif font-medium text-charcoal tracking-wide">
-                Retail <span className="text-gold italic">Ventures</span>
+            <a href="#" className="flex items-center">
+                <img src="/logo.png" alt="Retail Ventures" className="h-10 md:h-12 w-auto" />
             </a>
             
             {/* Desktop Navigation */}
