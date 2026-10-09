@@ -5,10 +5,10 @@ import { Menu } from "lucide-react";
 export function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
-        <div className="container mx-auto px-6 max-w-7xl h-20 flex items-center justify-between">
+        <div className="container mx-auto px-6 max-w-7xl h-24 flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center">
-                <img src="/logo.png" alt="Retail Ventures" className="h-10 md:h-12 w-auto" />
+                <img src="/logo.png" alt="Retail Ventures" className="h-16 md:h-20 w-auto object-contain py-2" />
             </a>
             
             {/* Desktop Navigation */}

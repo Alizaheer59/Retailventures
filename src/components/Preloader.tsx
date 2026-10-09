@@ -26,7 +26,7 @@ export function Preloader() {
           <motion.img
             src="/logo.png"
             alt="Loading Retail Ventures..."
-            className="h-24 md:h-32 w-auto drop-shadow-sm"
+            className="h-32 md:h-48 lg:h-56 w-auto max-w-[85vw] object-contain drop-shadow-sm"
             animate={{ 
               scale: [0.95, 1.05, 0.95],
               opacity: [0.7, 1, 0.7] 
