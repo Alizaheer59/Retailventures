@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
 
 export function Contact() {
   return (
-    <section className="bg-charcoal text-white pt-24 pb-12 border-t border-white/10">
+    <section id="contact" className="bg-charcoal text-white pt-24 pb-12 border-t border-white/10">
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* CTA Banner */}

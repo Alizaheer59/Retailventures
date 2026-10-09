@@ -12,7 +12,7 @@ const steps = [
 
 export function Methodology() {
   return (
-    <section className="py-24 bg-charcoal text-white">
+    <section id="methodology" className="py-24 bg-charcoal text-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="mb-16 md:flex justify-between items-end">
           <div className="max-w-2xl">

@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Founder() {
   return (
-    <section className="py-24 bg-beige text-charcoal">
+    <section id="founder" className="py-24 bg-beige text-charcoal">
       <div className="container mx-auto px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ export function Founder() {
           <div className="md:w-1/3">
             <div className="w-full aspect-[3/4] bg-gray-200 relative overflow-hidden group">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=3149&auto=format&fit=crop" 
+                src="/founder.jpg" 
                 alt="Abdul M. Raqshan" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
